@@ -1,12 +1,12 @@
-import { Router } from "express";
-import mongoose from "mongoose";
+var express = require("express");
+var router = express.Router();
+var mongoose = require("mongoose");
 var userFacade = require("../facade/UserFacade");
-var router = Router();
-
-
 
 router.get("/users", async function(req, res, next) {
   {
-    res.json({ users: await userFacade.getAllUseres });
+    res.json({ users: await userFacade.getAllUsers() });
   }
 });
+
+module.exports = router;

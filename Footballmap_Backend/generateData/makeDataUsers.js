@@ -1,12 +1,11 @@
-var connect = require("./dbConnect.js");
-connect(require("./settings").DEV_DB_URI);
-var userFacade = require("./facade/UserFacade");
-var User = require("./models/User.js");
+var connect = require("../dbConnect.js");
+connect(require("../settings").DEV_DB_URI);
+var userFacade = require("../facade/UserFacade");
+var User = require("../models/User.js");
 
 async function makeData() {
   console.log("Making users");
   try {
- 
     //This will activate the "save" midleware
     var u = new User({
       firstName: "Kurt",
