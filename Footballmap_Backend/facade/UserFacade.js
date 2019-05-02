@@ -1,8 +1,8 @@
-var mongoose = require("mongoose");
-var User = require("../models/User");
+var mongoose = require('mongoose');
+var User = require('../models/User');
 
 function getAllUsers() {
-  return User.find({}).exec();
+	return User.find({}).exec();
 }
 
 // async function addUser(firstName, lastName, userName, password, email) {
@@ -19,6 +19,6 @@ function getAllUsers() {
 // }
 
 module.exports = {
-  getAllUsers,
-  addUser
+	getAllUsers
+	//addUser
 };
