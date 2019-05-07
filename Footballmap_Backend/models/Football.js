@@ -7,25 +7,32 @@ var stadiumSchema = new Schema({
   capacity: Number,
   built: Number
 });
-var StadiumClub = mongoose.model("StadiumClub", stadiumSchema);
+var StadiumClub = mongoose.model("StadiumClubs", stadiumSchema);
 
 var FootballClubSchema = new Schema({
   fullClubName: String,
   Nicknames: String,
   logo: String,
   city: String,
-  stadium: [{ type: Schema.Types.ObjectId, ref: "StadiumClub" }],
   founded: Number,
-  league: String
+  league: String,
+  stadium: stadiumSchema
+  // stadiums: {
+  //   fullName: String,
+  //   Coordinates: String,
+  //   capacity: Number,
+  //   built: Number
+  // }
 });
 var FootballClub = mongoose.model("FootballClub", FootballClubSchema);
 
 var LeagueSchema = new Schema({
   name: String,
   country: String,
-  teams: [{ type: Schema.Types.ObjectId, ref: "FootballClub", default: null }],
+  //teams: [{ type: Schema.Types.ObjectId, ref: "FootballClub", default: null }],
+  teams: [FootballClubSchema],
   cup: [{ type: Schema.Types.ObjectId, ref: "Cup", default: null }],
-  year: Number
+  founded: Number
   //winner:[{ type: Schema.Types.ObjectId, ref: "FootballClub", default: null }] + year,
 });
 var League = mongoose.model("League", LeagueSchema);

@@ -5,7 +5,7 @@ function getAll() {
   return Football.find({}).exec();
 }
 
-function addAll(
+async function addAll(
   name,
   country,
   teams,
@@ -37,8 +37,11 @@ function addAll(
       })
     })
   });
+  await League.save();
+  return League;
 }
 
 module.exports = {
-  getAll
+  getAll,
+  addAll
 };
