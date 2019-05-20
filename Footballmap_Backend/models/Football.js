@@ -17,12 +17,6 @@ var FootballClubSchema = new Schema({
   founded: Number,
   league: String,
   stadium: stadiumSchema
-  // stadiums: {
-  //   fullName: String,
-  //   Coordinates: String,
-  //   capacity: Number,
-  //   built: Number
-  // }
 });
 var FootballClub = mongoose.model("FootballClub", FootballClubSchema);
 
