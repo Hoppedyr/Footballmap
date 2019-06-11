@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var Football = require("../models/Football");
 
 function getAll() {
-  return Football.find({}).exec();
+  return Football.League.find({}).exec();
 }
 
 async function addAll(

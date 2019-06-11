@@ -7,7 +7,6 @@ var { Cup, FootballClub, League, StadiumClub } = require("../models/Football");
 async function makeData2() {
   console.log("Making shit");
   try {
-<<<<<<< HEAD
     var l = new League({
       name: "PremierLeague",
       country: "England",
@@ -44,15 +43,12 @@ async function makeData2() {
       stadium: Emirates
     });
 
-=======
->>>>>>> 4881e875145fa0eec21b11c4af70cea914a5f56f
     var Emirates = new StadiumClub({
       fullName: "Emirates Stadium",
       Coordinates: "etste",
       capacity: 60.355,
       built: 2016
     });
-<<<<<<< HEAD
 
     var Huddersfield = new FootballClub({
       fullClubName: "Huddersfield",
@@ -69,14 +65,11 @@ async function makeData2() {
       capacity: 24.5,
       built: 1994
     });
-=======
->>>>>>> 4881e875145fa0eec21b11c4af70cea914a5f56f
 
     var Fullham = new FootballClub({
       fullClubName: "Fullham Football Club",
       Nicknames: "The Cottagers",
       logo: "String",
-<<<<<<< HEAD
       city: " London",
       founded: 1879,
       stadium: CravenCottage
@@ -304,7 +297,7 @@ async function makeData2() {
     });
 
     var TottenhamHotspurStadium = new StadiumClub({
-      fullName: "		Tottenham Hotspur Stadium",
+      fullName: "	Tottenham Hotspur Stadium",
       Coordinates: "dfgdf",
       capacity: 63.0,
       built: 2019
@@ -354,326 +347,6 @@ async function makeData2() {
       Coordinates: "dfgdf",
       capacity: 55.097,
       built: 2003
-=======
-      city: "London",
-      founded: 1886,
-      stadium: Emirates
-    });
-
-    var JohnSmithStadium = new StadiumClub({
-      fullName: "	John Smith's Stadium",
-      Coordinates: "dfgdf",
-      capacity: 24.5,
-      built: 1994
-    });
-
-    var Huddersfield = new FootballClub({
-      fullClubName: "Huddersfield",
-      Nicknames: "The Terries",
-      logo: "String",
-      city: " Huddersfield",
-      founded: 1908,
-      stadium: JohnSmithStadium
-    });
-
-    var CravenCottage = new StadiumClub({
-      fullName: "	Craven Cottage",
-      Coordinates: "dfgdf",
-      capacity: 25.7,
-      built: 1896
-    });
-    var Fullham = new FootballClub({
-      fullClubName: "Fullham Football Club",
-      Nicknames: "The Cottagers",
-      logo: "String",
-      city: " London",
-      founded: 1879,
-      stadium: CravenCottage
-    });
-    var CardiffCityStadium = new StadiumClub({
-      fullName: "Cardiff City Stadium",
-      Coordinates: "dfgdf",
-      capacity: 26.828,
-      built: 1896
-    });
-    var Cardiff = new FootballClub({
-      fullClubName: "	Cardiff City Football Club",
-      Nicknames: "The Bluebirds",
-      logo: "String",
-      city: " Cardiff",
-      founded: 1899,
-      stadium: CardiffCityStadium
-    });
-
-    var FalmerStadium = new StadiumClub({
-      fullName: "Falmer Stadium",
-      Coordinates: "dfgdf",
-      capacity: 30.75,
-      built: 1896
-    });
-    var BrightonHove = new FootballClub({
-      fullClubName: "	Brighton & Hove Albion FC",
-      Nicknames: "The Seagulls",
-      logo: "String",
-      city: " Brighton & Hove",
-      founded: 1901,
-      stadium: FalmerStadium
-    });
-
-    var FalmerStadium = new StadiumClub({
-      fullName: "St. Mary's Stadium",
-      Coordinates: "dfgdf",
-      capacity: 32.689,
-      built: 2001
-    });
-    var Southampton = new FootballClub({
-      fullClubName: "	Southampton Football Club",
-      Nicknames: "	Saints",
-      logo: "String",
-      city: "Southampton ",
-      founded: 1885,
-      stadium: FalmerStadium
-    });
-
-    var TurfMoor = new StadiumClub({
-      fullName: "Turf Moor",
-      Coordinates: "dfgdf",
-      capacity: 21.8,
-      built: 1883
-    });
-
-    var Burnley = new FootballClub({
-      fullClubName: "	Burnley Football Club",
-      Nicknames: "The Clarets",
-      logo: "String",
-      city: "Burnley  ",
-      founded: 1882,
-      stadium: TurfMoor
-    });
-
-    var StJamesPark = new StadiumClub({
-      fullName: "St James' Park",
-      Coordinates: "dfgdf",
-      capacity: 52.387,
-      built: 2000
-    });
-    var NewcastleUnited = new FootballClub({
-      fullClubName: "Newcastle United F.C.",
-      Nicknames: "	The Magpies",
-      logo: "String",
-      city: "Newcastle  ",
-      founded: 1892,
-      stadium: StJamesPark
-    });
-
-    var DeanCourt = new StadiumClub({
-      fullName: "Dean Court ",
-      Coordinates: "dfgdf",
-      capacity: 12000,
-      built: 2000
-    });
-    var Bournemouth = new FootballClub({
-      fullClubName: "	Athletic Football Club Bournemouth",
-      Nicknames: "	The Cherries ",
-      logo: "String",
-      city: "Bournemouth  ",
-      founded: 1899,
-      stadium: DeanCourt
-    });
-
-    var SelhurstPark = new StadiumClub({
-      fullName: "Selhurst Park ",
-      Coordinates: "dfgdf",
-      capacity: 26.309,
-      built: 1924
-    });
-    var CrystalPalace = new FootballClub({
-      fullClubName: "	Crystal Palace Football Club",
-      Nicknames: "	The Eagles ",
-      logo: "String",
-      city: "London  ",
-      founded: 1905,
-      stadium: SelhurstPark
-    });
-
-    var LondonStadium = new StadiumClub({
-      fullName: "London Stadium ",
-      Coordinates: "dfgdf",
-      capacity: 60.0,
-      built: 2007
-    });
-    var WestHamUnited = new FootballClub({
-      fullClubName: "	West Ham United Football Club",
-      Nicknames: "	The Hammers",
-      logo: "String",
-      city: "London  ",
-      founded: 1905,
-      stadium: LondonStadium
-    });
-
-    var VicarageRoad = new StadiumClub({
-      fullName: "Vicarage Road ",
-      Coordinates: "dfgdf",
-      capacity: 19.92,
-      built: 1922
-    });
-    var Watford = new FootballClub({
-      fullClubName: "	Watford Football Club",
-      Nicknames: "	The Hornets",
-      logo: "String",
-      city: "Watford  ",
-      founded: 1881,
-      stadium: VicarageRoad
-    });
-
-    var KingPowerStadium = new StadiumClub({
-      fullName: "	King Power Stadium ",
-      Coordinates: "dfgdf",
-      capacity: 32.262,
-      built: 2002
-    });
-    var LeicesterCity = new FootballClub({
-      fullClubName: "		Leicester City Football Club",
-      Nicknames: "	The Foxes",
-      logo: "String",
-      city: "Leicester  ",
-      founded: 1884,
-      stadium: KingPowerStadium
-    });
-
-    var GoodisonPark = new StadiumClub({
-      fullName: "		Goodison Park ",
-      Coordinates: "dfgdf",
-      capacity: 40.569,
-      built: 1892
-    });
-    var LeicesterCity = new FootballClub({
-      fullClubName: "		Everton Football Club",
-      Nicknames: "	The Toffees",
-      logo: "String",
-      city: "Liverpool ",
-      founded: 1878,
-      stadium: GoodisonPark
-    });
-
-    var MolineuxStadium = new StadiumClub({
-      fullName: "		Molineux Stadium",
-      Coordinates: "dfgdf",
-      capacity: 31.7,
-      built: 1889
-    });
-    var Wolverhampton = new FootballClub({
-      fullClubName: "		Wolverhampton Wanderers Football Club",
-      Nicknames: "	Wolves",
-      logo: "String",
-      city: " Wolverhampton ",
-      founded: 1877,
-      stadium: MolineuxStadium
-    });
-
-    var OldTrafford = new StadiumClub({
-      fullName: "			Old Trafford",
-      Coordinates: "dfgdf",
-      capacity: 75.957,
-      built: 1909
-    });
-    var ManchesterUnited = new FootballClub({
-      fullClubName: "	Manchester United Football Club",
-      Nicknames: "The Red Devils",
-      logo: "String",
-      city: " Manchester",
-      founded: 1878,
-      stadium: OldTrafford
-    });
-
-    var TottenhamHotspurStadium = new StadiumClub({
-      fullName: "		Tottenham Hotspur Stadium",
-      Coordinates: "dfgdf",
-      capacity: 63.0,
-      built: 2019
-    });
-
-    var Tottenham = new FootballClub({
-      fullClubName: "	Tottenham Hotspur Football Club",
-      Nicknames: "Spurs",
-      logo: "String",
-      city: " London",
-      founded: 1882,
-      stadium: TottenhamHotspurStadium
-    });
-
-    var StamfordBridge = new StadiumClub({
-      fullName: "	Stamford Bridge",
-      Coordinates: "dfgdf",
-      capacity: 40.853,
-      built: 1876
-    });
-    var Chelsea = new FootballClub({
-      fullClubName: "	Chelsea Football Club",
-      Nicknames: "	The Blues",
-      logo: "String",
-      city: " London",
-      founded: 1905,
-      stadium: StamfordBridge
-    });
-    var Anfield = new StadiumClub({
-      fullName: "		Anfield",
-      Coordinates: "dfgdf",
-      capacity: 54.167,
-      built: 1884
-    });
-
-    var Liverpool = new FootballClub({
-      fullClubName: "	Liverpool Football Club",
-      Nicknames: "	The Reds",
-      logo: "String",
-      city: " Liverpool",
-      founded: 1892,
-      stadium: Anfield
-    });
-
-    var EthihadStadium = new StadiumClub({
-      fullName: "		Ethihad Stadium",
-      Coordinates: "dfgdf",
-      capacity: 55.097,
-      built: 2003
-    });
-
-    var ManchesterCity = new FootballClub({
-      fullClubName: "	 Manchester City Football Club",
-      Nicknames: "		The Citizens",
-      logo: "String",
-      city: " Manchester ",
-      founded: 1894,
-      stadium: EthihadStadium
-    });
-
-    var l = new League({
-      name: "PremierLeague",
-      country: "England",
-      founded: 1992,
-      teams: [
-        Arsenal,
-        Huddersfield,
-        Fullham,
-        Cardiff,
-        BrightonHove,
-        Southampton,
-        Burnley,
-        NewcastleUnited,
-        Bournemouth,
-        CrystalPalace,
-        WestHamUnited,
-        Watford,
-        LeicesterCity,
-        Wolverhampton,
-        Tottenham,
-        Chelsea,
-        ManchesterUnited,
-        ManchesterCity,
-        Liverpool
-      ]
->>>>>>> 4881e875145fa0eec21b11c4af70cea914a5f56f
     });
 
     //await League.deleteMany({});

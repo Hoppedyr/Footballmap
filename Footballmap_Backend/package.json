@@ -3,17 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "mocha",
+    "dev": "SET DEBUG=FOOTBALL_BACKEND:* & npm start",
+    "devmon": "SET DEBUG=FOOTBALL_BACKEND:* & nodemon npm start"
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
     "colors": "^1.3.3",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
+    "debug": "^2.6.9",
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "mongoose": "^5.5.3",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "supports-color": "^6.1.0",
+    "winston": "^3.2.1"
   }
 }
